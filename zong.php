@@ -1,10 +1,16 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx57bad217c997d206", "47400dbd66ed693b85de20393d2064db");
+$signPackage = $jssdk->GetSignPackage();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
 		<link rel="stylesheet" href="首页.css" />
-<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 		<link rel="stylesheet" href="modules/homePage/swiper.min.css" />
 		<meta name="viewport" content="width=414,maximum-scale=5,user-scalable=no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,5 +76,49 @@
 			</div>
 		</footer>
 	</body>
+<script type="text/javascript">
 
+ wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: [
+        'checkJsApi',
+        'onMenuShareWeibo',
+        'onMenuShareQZone',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onVoiceRecordEnd',
+        'playVoice',
+        'onVoicePlayEnd',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ]
+  });
+</script>
 </html>
