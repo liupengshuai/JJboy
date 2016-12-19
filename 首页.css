@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 0.12rem;
+	width: 4.14rem;
+}
+html{
+	font-size: 1rem;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+img{
+	border: none;
+}
+@keyframes firstAnimation{
+			from{
+			width: 1.37rem;
+			height:2.24rem;
+			border-radius: 50%;
+		
+			}
+			to{
+			width: 0;
+			height: 0;
+			left:60%;
+			top:100%;
+			border-radius:0;
+			}
+		}
+header{
+	position: fixed;
+	top: 0;
+	z-index: 101;
+}
+/*header div{
+	width: 4.14rem;
+	height: 0.6rem;
+	background: #1a1a1f;
+	line-height: 0.6rem;
+}*/
+header div .myspan1{
+	width: 0.6rem;
+	height: 0.27rem;
+	background:url(img/sanjiao.jpg) no-repeat left,#1a1a1f;
+	margin-left: 0.13rem;
+}
+.myspan1 a{
+	padding-left: 0.19rem;
+	color: white;
+	font-size: 0.18rem;
+}
+.myspan2{
+	margin-left: 2.95rem;
+}
+.myspan2 img{
+	width: 0.08rem;
+	height: 0.09rem;
+}
+.myspan3{
+	color: white;
+	position: absolute;
+	left: 1.93rem;
+	font-size: 0.18rem;
+}
+
+footer{
+	width: 4.14rem;
+	height: 0.7rem;
+	background: #f5f5f5;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+}
+footer a{
+	color: black;
+}
+.myfooter{
+	margin: auto;
+	position: relative;
+}
+.myfooter img{
+	width: 0.25rem;
+	height: 0.3rem;
+}
+.myfooter p{
+	text-align: center;
+	font-size: 0.15rem;
+	width: 0.73rem;
+	margin-left: -0.25rem;
+}
+.myfooter span{
+	color: red;
+	font-size: 20px;
+	position: absolute;
+	left:0.24rem;
+	top: 0;
+}

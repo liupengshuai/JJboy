@@ -1,0 +1,19 @@
+<script type="text/html" id="temp_2">
+	<%for(var n=0;n<Date.length;n++){%>
+		<div class="main_right_main">
+					<ul>
+						<li>
+							<img src=<%=Date[n].img%>/>
+						</li>
+						<li>
+							<p><%=Date[n].name%></p>
+							<span id="myspan">精选</span>
+							<p><%=Date[n].specifics%></p>
+							<p>￥<%=Date[n].partner_price%></p>
+							<a href="#">+</a>
+						</li>
+					</ul>
+				</div>
+		<%}%>
+
+</script>

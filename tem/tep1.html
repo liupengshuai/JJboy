@@ -1,0 +1,80 @@
+<script type="text/html" id="temp_1">
+       <header class="qq">
+			<p>北京市政府310&nbsp;</p>
+			<span><img src="img/shousuo.jpg"></span>
+		</header>
+		<main>
+			<div class="main_left">
+				<ul>
+				<%for(var n=0;n<data.categories.length;n++){%>
+			
+				<li class="box12" id=<%=data.categories[n].id%>><%=data.categories[n].name%></li>
+			
+		<%}%>	
+		</ul>
+			</div>
+			<div class="main_right">
+				<div class="main_right_1">
+					<ul>
+						<li>全部分类</li>
+						<li id="gun">|</li>
+						<li>综合排序</li>
+					</ul>
+				</div>
+				<div class="main">
+				<%for(var n=0;n<data.products[104749].length;n++){%>
+		<div class="main_right_main">
+					<ul>
+						<li>
+							<img src=<%=data.products[104749][n].img%>/>
+						</li>
+						<li>
+							<p><%=data.products[104749][n].name%></p>
+							<span id="myspan">精选</span>
+							<p><%=data.products[104749][n].specifics%></p>
+							<p>￥<%=data.products[104749][n].partner_price%></p>
+							<a href="#" class="myA">+</a>
+						</li>
+					</ul>
+				</div>
+		<%}%>
+	
+				
+			</div>
+			</div>
+		</main>
+		<footer>
+			<div class="myfooter">
+				<a href="首页.html"><figure>
+					<img src="img/shouye.png" alt="" />
+					<figcaption>
+						<p>首页</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="闪送超市.html"><figure>
+					<img src="img/chaoshi.png" alt="" />
+					<figcaption>
+						<p>闪送超市</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="购物车.html"><figure>
+					<img src="img/gouwu.png" alt="" />
+					<figcaption>
+						<p>购物车</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="我的.html"><figure>
+					<img src="img/my.png" alt="" />
+					<figcaption>
+						<p>我的</p>
+					</figcaption>
+				</figure></a>
+			</div>
+		</footer>
+</script>

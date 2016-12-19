@@ -1,0 +1,21 @@
+require.config({
+	paths:{
+		//js文件省略文件类型
+		"jquery":"./js/jquery-1.11.0.min",
+		"Backbone":"./js/backbone",
+		"underscore":"./js/underscore",
+		"text":"./js/text",
+		"css":"./js/css",
+		"swiper":"./js/swiper.min",
+		"router":'./router'
+	},
+	shim:{
+		"swiper":{
+			deps:["jquery"]
+		}
+	}
+});
+//config:配置文件
+   require(['jquery','Backbone','router',"swiper"],function($,Backbone,router){
+       Backbone.history.start();
+   });

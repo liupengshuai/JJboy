@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=414,maximum-scale=5,user-scalable=no"/>
+		<script>
+			(function (doc, win) {
+			  var docEl = doc.documentElement,
+			    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			    recalc = function () {
+			      var clientWidth = docEl.clientWidth;
+			      if (!clientWidth) return;
+			      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+			    };
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, recalc, false);
+			  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+
+	</head>
+	<body>
+		<header class="ee">
+			<h1>购物车</h1>
+		</header>
+		<main>
+			<div class="xinxi">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>收&nbsp;货&nbsp;人</td>
+						<td>刘鹏&nbsp;先生</td>
+					</tr>
+					<tr>
+						<td>电&nbsp;&nbsp;&nbsp;&nbsp;话</td>
+						<td>18710164878</td>
+					</tr>
+					<tr>
+						<td>收货地址</td>
+						<td>北京天安门东大街88号</td>
+					</tr>
+				</table>
+				<span id="myspan111">修改&nbsp;></span>
+			</div>
+			<div class="sansong">
+				<span id="myspan1">闪送超市</span>
+				<span id="myspan2">凑单专区</span>
+				<p>￥0起送，22:00前满￥30元免运费，22:00后满￥60元免运费。</p>
+			</div>
+			<div class="time">
+				<span>收货时间</span>
+				<span>一小时送达</span>
+				<span>可预订&nbsp;></span>
+			</div>
+			<div class="time">
+				<span>收货备注</span>
+				<input type="text" placeholder="可输入100字以内特殊要求内容" />
+			</div>
+			<div class="dongxi">
+				<span id="dongxisp"><img src="img/xuanzhong.png"></span>
+				<div class="dongxi_tupian">
+					<img src="img/www.jpg"/>
+				</div>
+				<div class="dongxi_wenzi">
+					<p>蜂觅.越南直采红心火龙果</p>
+					<p>￥10.9</p>
+					<div id="much">
+						<div>-</div>
+						<div>1</div>
+						<div>+</div>
+					</div>
+				</div>
+			</div>
+			<div class="dongxi">
+				<span id="dongxisp"><img src="img/xuanzhong.png"></span>
+				<div class="dongxi_tupian">
+					<img src="img/www.jpg"/>
+				</div>
+				<div class="dongxi_wenzi">
+					<p>蜂觅.越南直采红心火龙果</p>
+					<p>￥10.9</p>
+					<div id="much">
+						<div>-</div>
+						<div>1</div>
+						<div>+</div>
+					</div>
+				</div>
+			</div>
+			<div class="time">
+				<span id="dongxisp1"><img src="img/xuanzhong.png"></span>
+				<span style="color: black;font-size: 16px">全选</span>
+				<span style="padding-left:15px;font-size: 16px;">共：<span style="color: red;">￥10.9</span></span>
+				<span style="display: block;width: 130px;height: 60px;background: #ffd600;text-align: center;
+					line-height: 60px;float: right;font-size: 18px;">选好了</span>
+			</div>
+		</main>
+		<footer>
+			<div class="myfooter">
+				<a href="首页.html"><figure>
+					<img src="img/shouye.png" alt="" />
+					<figcaption>
+						<p>首页</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="闪送超市.html"><figure>
+					<img src="img/chaoshi.png" alt="" />
+					<figcaption>
+						<p>闪送超市</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="购物车.html"><figure>
+					<img src="img/gouwu.png" alt="" />
+					<figcaption>
+						<p>购物车</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="我的.html"><figure>
+					<img src="img/my.png" alt="" />
+					<figcaption>
+						<p>我的</p>
+					</figcaption>
+				</figure></a>
+			</div>
+		</footer>
+
+	</body>
+</html>

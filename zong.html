@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="首页.css" />
+		<link rel="stylesheet" href="modules/homePage/swiper.min.css" />
+		<meta name="viewport" content="width=414,maximum-scale=5,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<script type="text/javascript" src="js/baiduTemplate.js" ></script>
+		<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
+		<script>
+			(function (doc, win) {
+ 			 var docEl = doc.documentElement,
+				    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				    recalc = function () {
+				      var clientWidth = docEl.clientWidth;
+				      if (!clientWidth) return;
+				      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+				    };
+				  if (!doc.addEventListener) return;
+				  win.addEventListener(resizeEvt, recalc, false);
+				  doc.addEventListener('DOMContentLoaded', recalc, false);
+				})(document, window);
+		</script>
+	</head>
+	<body>
+		
+		<main>
+			<div class = "home"></div>
+			<div class = "market"></div>
+			<div class = "order"></div>
+			<div class = "mine"></div>
+		</main>
+		<footer>
+			<div class="myfooter">
+				<a href="#home"><figure>
+					<img src="img/shouye.png" alt="" />
+					<figcaption>
+						<p>首页</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="#market"><figure>
+					<img src="img/chaoshi.png" alt="" />
+					<figcaption>
+						<p>闪送超市</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="#order"><figure>
+					<img src="img/gouwu.png" alt="" />
+					<span></span>
+					<figcaption>
+						
+						<p>购物车</p>
+					</figcaption>
+				</figure></a>
+			</div>
+			<div class="myfooter">
+				<a href="#mine"><figure>
+					<img src="img/my.png" alt="" />
+					<figcaption>
+						<p>我的</p>
+					</figcaption>
+				</figure></a>
+			</div>
+		</footer>
+	</body>
+
+</html>

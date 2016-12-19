@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录页</title>
+		<meta name="viewport" content="width=414,maximum-scale=5,user-scalable=no"/>
+		<link rel="stylesheet" href="登录页.css" />
+		<script>
+			(function (doc, win) {
+ 			 var docEl = doc.documentElement,
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		    recalc = function () {
+		      var clientWidth = docEl.clientWidth;
+		      if (!clientWidth) return;
+		      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+		    };
+		  if (!doc.addEventListener) return;
+		  win.addEventListener(resizeEvt, recalc, false);
+		  doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		</script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<span class="myspan1">
+					<a href="#">返回</a>
+				</span>
+				<span class="myspan2">
+					<a href="#"><img src="img/dian.jpg"></a>
+					<a href="#"><img src="img/dian.jpg"></a>
+					<a href="#"><img src="img/dian.jpg"></a>
+				</span>
+			</div>
+		</header>
+		<main>
+			<div class="main_a"></div>
+			<div class="main_logo">
+			</div>
+			<div class="main_diwei">
+				<span><a>定位中</a></span>
+			</div>
+		</main>
+	</body>
+</html>

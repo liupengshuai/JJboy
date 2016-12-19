@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>integral</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="integral.css">
+	<script type="text/javascript">
+		(function (doc, win) {
+		  var docEl = doc.documentElement,
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		    recalc = function () {
+		      var clientWidth = docEl.clientWidth;
+		      if (!clientWidth) return;
+		      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+		    };
+		  if (!doc.addEventListener) return;
+		  win.addEventListener(resizeEvt, recalc, false);
+		  doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+	<div id="header">
+		<p>积分商城</p>
+	</div>
+	<div id="nav">
+		<div class="circle3">
+			<div class="circle2">
+				<div class="circle1">
+					<p>可用积分</p>
+					<p>1</p>
+				</div>
+			</div>	
+		</div>	
+	</div>
+	<div id="banner">
+		<div class="box1">
+			<figure>
+				<img src="img/integral2.png" alt="">
+				<figcaption>
+					<p>积分明细</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="box1">
+			<figure>
+				<img src="img/integral3.png" alt="">
+				<figcaption>
+					<p>兑换记录</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="box1">
+			<figure>
+				<img src="img/integral4.png" alt="">
+				<figcaption>
+					<p>积分规则</p>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div id="line"></div>
+	<div id="main">
+		<div class="main_box">
+			<img src="img/quan1.jpg" alt="">
+			<div class="box_bottom">
+			<p>3元积分兑换券</p>
+			<p>300积分</p>
+			</div>
+		</div>
+
+		<div class="main_box">
+			<img src="img/quan2.jpg" alt="">
+			<div class="box_bottom">
+			<p>5元积分兑换券</p>
+			<p>500积分</p>
+			</div>
+		</div>
+
+		<div class="main_box">
+			<img src="img/quan3.jpg" alt="">
+			<div class="box_bottom">
+			<p>8元积分兑换券</p>
+			<p>800积分</p>
+			</div>
+		</div>
+
+		<div class="main_box">
+			<img src="img/quan4.jpg" alt="">
+			<div class="box_bottom">
+			<p>10元积分兑换券</p>
+			<p>1000积分</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>

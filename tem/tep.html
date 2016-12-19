@@ -1,0 +1,126 @@
+<script type="text/html" id="temp">
+		<header class="shouye">
+			<div>
+				<span class="myspan1">
+					<a href="#">返回</a>
+				</span>
+				<span class="myspan3">爱鲜蜂</span>
+				<span class="myspan2">
+					<a href="#"><img src="img/dian.jpg"></a>
+					<a href="#"><img src="img/dian.jpg"></a>
+					<a href="#"><img src="img/dian.jpg"></a>
+				</span>
+			</div>
+		</header>
+		<main>
+			<div class="main_a">
+				
+				<span class="main_span1">济源路附近</span>
+				<div class="main_a1">
+						<div>扫一扫</div>
+				</div>
+				<div class="main_a2">
+					<div>搜索</div>
+				</div>
+			</div>
+	<div class="swiper-container">
+    	<div class="swiper-wrapper">
+			<%for(var i=0;i<data.act_info[0].act_rows.length;i++){%>
+				<div class="swiper-slide">
+				<img src=<%=data.act_info[0].act_rows[i].activity.img%>>
+				</div>
+			<%}%>						
+   		</div>
+    	<div class="swiper-pagination"></div>
+  </div>
+    	<div class="main_banner">
+    		<div class="main_banner1">
+    			<ul>
+    				<%for(var n=0;n<data.act_info[1].act_rows.length;n++){%>
+    					<li style="background: url(<%=data.act_info[1].act_rows[n].activity.img%>) no-repeat top;
+	background-size: 0.78rem 0.62rem;width: 0.87rem;
+	height: 0.81rem;float: left;
+	text-align: center;"><a href="#">
+						<%=data.act_info[1].act_rows[n].activity.name%>
+    					</a></li>
+    					<%}%>
+    				
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="main_banner2">
+    		<ul>
+    			<%for(var n=0;n<3;n++){%>
+    				<li style="background: url(<%=data.act_info[3].act_rows[n].activity.topimg%>);width: 1.38rem;
+	height: 1.81rem;background-size: 1.36rem 1.81rem;
+	float: left;"></li>
+    				<%}%>
+    		</ul>
+    	</div>
+    	<div class="main_banner3">
+    		<ul class="ul_1">
+    	<%for(var n=0;n<1;n++){%>
+    		<li style="width: 4.14rem;
+				height: 0.5rem;
+				background: url(<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%>) no-repeat center;
+				background-size: 4.14rem 0.5rem;"></li>
+    		<%}%>
+    			
+    		</ul>
+    		<ul class="ul_2">
+    			<%for(var n=0;n<data.act_info[4].act_rows[1].act_rows.length;n++){%>
+    		<li style="float: left;
+						width: 2.06rem;
+						height: 0.78rem;
+				background: url(<%=data.act_info[4].act_rows[1].act_rows[n].cactivity_detail.img%>) no-repeat center;
+				background-size: 1.91rem 0.78rem;"></li>
+    		<%}%>
+    		</ul>
+    		<ul class="ul_3">
+    		
+    			<%for(var n=0;n<data.act_info[4].act_rows[2].act_rows.length;n++){%>
+    				<li style="background: url(<%=data.act_info[4].act_rows[2].act_rows[n].cicons_detail.img%>) no-repeat top;
+	background-size: 0.85rem 0.75rem;"><a href="#"><%=data.act_info[4].act_rows[2].act_rows[n].cicons_detail.name%></a></li>
+    				<%}%>
+    		</ul>
+    		<ul class="ul_4">
+    			<%for(var n=0;n<data.act_info[4].act_rows[3].act_rows.length;n++){%>
+    				<li style="background: url(<%=data.act_info[4].act_rows[3].act_rows[n].activity.img%>) no-repeat center;
+	background-size: 2.06rem 0.82rem;"></li>
+    				<%}%>
+    		</ul>
+    	</div>
+    		<%for(var n=0;n<data.act_info[5].act_rows.length;n++){%>
+		<div class="Y_fruit1">
+			<div class="fruit_a1">
+    			<span id="fruit_span4">
+    				<%=data.act_info[5].act_rows[n].category_detail.name%>
+    			</span>
+    			<span id="fruit_span_right1">
+    				更多&nbsp;&nbsp;>
+    			</span>
+    		</div>
+    		<div class="fruit_banner1">
+    			
+			<img style="width: 4.14rem;height: 0.98rem;" class="lazy" data-original=<%=data.act_info[5].act_rows[n].activity.img%>>
+    		</div>
+    		<div class="fruit_much1">
+    			<ul>
+    		<%for(var m = 0;m<data.act_info[5].act_rows[n].category_detail.goods.length;m++){%>
+    			<li>
+    					<div>
+    						<img class="lazy" data-original=<%=data.act_info[5].act_rows[n].category_detail.goods[m].img%>>
+    					</div>
+    					<p><%=data.act_info[5].act_rows[n].category_detail.goods[m].name%></p>
+    					<span>精选</span>
+    					<div><%=data.act_info[5].act_rows[n].category_detail.goods[m].specifics%></div>
+    					<div>￥<%=data.act_info[5].act_rows[n].category_detail.goods[m].price%><span class="shoping_car">+</span></div>
+    			</li>
+    			<%}%>
+    			</ul>
+    			</div>
+			</div>
+		<%}%>
+    	
+		</main>
+</script>
