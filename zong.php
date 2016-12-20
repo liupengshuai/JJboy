@@ -76,6 +76,7 @@ $signPackage = $jssdk->GetSignPackage();
 			</div>
 		</footer> -->
 		<button onclick="f1()">获取地理位置</button>
+		<button onclick="f2()">插卡当前位置</button>
 
 		
 	</body>
@@ -131,6 +132,16 @@ $signPackage = $jssdk->GetSignPackage();
         var speed = res.speed; // 速度，以米/每秒计
         var accuracy = res.accuracy; // 位置精度
     }
+});
+ 	}
+ 	function f2(){
+ 		wx.openLocation({
+    latitude: 0, // 纬度，浮点数，范围为90 ~ -90
+    longitude: 0, // 经度，浮点数，范围为180 ~ -180。
+    name: '', // 位置名
+    address: '', // 地址详情说明
+    scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
+    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 });
  	}
  	
