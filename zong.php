@@ -75,7 +75,7 @@ $signPackage = $jssdk->GetSignPackage();
 				</figure></a>
 			</div>
 		</footer> -->
-		<button onclick="f1()"></button>
+		<button onclick="f1()">获取地理位置</button>
 
 		
 	</body>
