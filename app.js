@@ -7,15 +7,19 @@ require.config({
 		"text":"./js/text",
 		"css":"./js/css",
 		"swiper":"./js/swiper.min",
-		"router":'./router'
+		"router":'./router',
+		"lazy":"./js/jquery.lazyload.min"
 	},
 	shim:{
 		"swiper":{
+			deps:["jquery"]
+		},
+		"lazy":{
 			deps:["jquery"]
 		}
 	}
 });
 //config:配置文件
-   require(['jquery','Backbone','router',"swiper"],function($,Backbone,router){
+   require(['jquery','Backbone','router',"swiper","lazy"],function($,Backbone,router){
        Backbone.history.start();
    });

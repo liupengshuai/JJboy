@@ -11,7 +11,7 @@ define(["text!./首页.html","css!./首页.css"],function(homePage){
 					$("#temp1").load("./tem/tep.html",function(){
 						var home=baidu.template("temp",resData);
 						$(".home").html(home);
-//						$("img.lazy").lazyload();
+						$("img.lazy").lazyload();
 						var mySwiper = new Swiper('.swiper-container',{
 							autoplay: 1000,
 							loop:true
